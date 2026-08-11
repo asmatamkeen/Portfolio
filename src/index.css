@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  /* --- CUSTOM THEME COLORS --- */
+  --color-primary-pink: #ff4fa8;       /* Neon hot pink for highlights, text links, buttons */
+  --color-accent-pink: #f472b6;        /* Soft pink for subtle gradient blends */
+  --color-dark-bg: #090514;            /* Deep velvet indigo background instead of flat black */
+  --color-dark-card: #150d2a;          /* Rich purple-tinted card background */
+
+  /* --- ANIMATIONS --- */
   --animate-float: float 6s ease-in-out infinite;
 
   @keyframes float {
@@ -16,11 +23,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  /* Updated background from pure black (#000) to an elegant deep velvet indigo */
+  background-color: var(--color-dark-bg);
   color: #fff;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
+/* --- AOS BADGE DROP ANIMATIONS --- */
 [data-aos="drop-bounce"] {
   opacity: 0;
 }

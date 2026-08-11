@@ -18,6 +18,13 @@ const Hero = () => {
     // Video does NOT autoplay anymore
   }, []);
 
+  const handleVideoEnded = () => {
+    setIsPlaying(false);
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   const toggleVideo = (e) => {
     e.stopPropagation();
     if (videoRef.current) {
@@ -32,11 +39,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-black">
+    <section className="relative w-full h-screen overflow-hidden bg-[var(--color-dark-bg)]">
       {/* Background Video */}
       <video
         ref={videoRef}
-        loop
+        onEnded={handleVideoEnded}
         muted={isMuted}
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -138,7 +145,7 @@ const Hero = () => {
             {/* Secondary Button - Glassmorphism style */}
             <a 
               href={heroContent.ctaSecondary.href}
-              className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-black/40 border border-white text-white font-semibold hover:bg-black/60 transition-all duration-300 backdrop-blur-md"
+              className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-[var(--color-dark-bg)]/40 border border-white text-white font-semibold hover:bg-black/60 transition-all duration-300 backdrop-blur-md"
             >
               {heroContent.ctaSecondary.text}
             </a>

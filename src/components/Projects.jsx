@@ -33,7 +33,7 @@ const ProjectCard = ({ project, aosDelay }) => {
       }`}>
         {/* Badge */}
         {project.badge && (
-          <span className="inline-block text-xs font-bold tracking-widest uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20 mb-4">
+          <span className="inline-block text-xs font-bold tracking-widest uppercase text-red-400 bg-[var(--color-primary-pink)]/10 px-3 py-1 rounded-full border border-red-500/20 mb-4">
             {project.badge}
           </span>
         )}
@@ -54,7 +54,7 @@ const ProjectCard = ({ project, aosDelay }) => {
           {tags.map((tag) => (
             <span 
               key={tag}
-              className="px-3 py-1 text-xs font-bold text-white/70 bg-white/5 rounded-full border border-white/10 hover:bg-red-500/20 hover:border-red-500/30 hover:text-red-300 transition-all duration-300 cursor-default"
+              className="px-3 py-1 text-xs font-bold text-white/70 bg-white/5 rounded-full border border-white/10 hover:bg-[var(--color-primary-pink)]/20 hover:border-red-500/30 hover:text-red-300 transition-all duration-300 cursor-default"
             >
               {tag}
             </span>
@@ -83,7 +83,7 @@ const ProjectCard = ({ project, aosDelay }) => {
             rel={demoUrl ? "noopener noreferrer" : undefined}
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
               demoUrl 
-                ? 'bg-[#ff2a2a] text-white hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)]' 
+                ? 'bg-[#ff2a2a] text-white hover:bg-[var(--color-primary-pink)] hover:shadow-[0_0_20px_rgba(255,42,42,0.4)]' 
                 : 'bg-white/5 text-white/40 border border-white/10 cursor-not-allowed'
             }`}
           >
@@ -96,8 +96,8 @@ const ProjectCard = ({ project, aosDelay }) => {
           <a 
             href={project.links.frontendDemo}
             target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ff2a2a] text-white text-sm font-semibold hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)] transition-all duration-300"
+            rel="noopener noreferrer"  
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ff2a2a] text-white text-sm font-semibold hover:bg-[var(--color-primary-pink)] hover:shadow-[0_0_20px_rgba(255,42,42,0.4)] transition-all duration-300"
           >
             <ExternalLinkIcon />
             Frontend Demo

@@ -37,8 +37,8 @@ const TechnicalSkills = () => {
   return (
     <section id="skills" className="bg-[#0a0a0a] pt-24 pb-28 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       {/* Background visual elements */}
-      <div className="absolute top-1/4 left-10 w-96 h-96 bg-red-600/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-red-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 left-10 w-96 h-96 bg-[var(--color-primary-pink)]/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-[var(--color-primary-pink)]/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         
