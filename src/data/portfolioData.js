@@ -236,7 +236,7 @@ export const projectsList = [
     id: "omr-corrector",
     number: "01",
     title: "AI OMR Sheet Corrector",
-    badge: "Hackathon Winner Project",
+    badge: "Datanyx '25 Datathon",
     isFlagship: true,
     description:
       "Co-developed an automated bubble-sheet grading platform using Python and OpenCV. Implemented computer vision algorithms achieving 98%+ grading accuracy, successfully eliminating manual evaluation errors during high-volume test scoring.",
