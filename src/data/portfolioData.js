@@ -312,7 +312,7 @@ export const projectsList = [
     tech: ["Java", "OOP", "Algorithms"],
     category: "Software Utilities",
     links: {
-      github: "https://github.com/asmatamkeen",
+      github: "https://github.com/asmatamkeen/TravelBudgeter",
       demo: null,
       live: null,
     },
