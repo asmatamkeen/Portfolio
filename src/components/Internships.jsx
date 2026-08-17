@@ -5,28 +5,28 @@ const InternshipCard = ({ intern, index }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={index * 150}
-    className="bg-black/20 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:bg-black/35 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 flex flex-col justify-between"
+    className="bg-rose-100 backdrop-blur-md border border-rose-200 rounded-3xl p-8 hover:scale-[1.02] hover:bg-rose-200 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 flex flex-col justify-between"
   >
     <div>
       <div className="flex justify-between items-start mb-6">
-        <span className="text-white/40 text-xs font-mono font-bold tracking-widest uppercase">
+        <span className="text-slate-400 text-xs font-mono font-bold tracking-widest uppercase">
           {intern.duration}
         </span>
-        <span className="bg-white/10 text-white text-[10px] font-black tracking-widest uppercase py-1 px-3 rounded-full border border-white/15">
+        <span className="bg-rose-100 text-slate-800 text-[10px] font-black tracking-widest uppercase py-1 px-3 rounded-full border border-rose-200">
           Internship
         </span>
       </div>
-      <h3 className="text-white text-2xl font-black mb-1 tracking-tight">
+      <h3 className="text-slate-800 text-2xl font-black mb-1 tracking-tight">
         {intern.role}
       </h3>
-      <p className="text-red-200 text-sm font-black tracking-wide mb-6 uppercase">
+      <p className="text-lavender-200 text-sm font-black tracking-wide mb-6 uppercase">
         {intern.organization}
       </p>
 
       {/* Skills gained */}
       <div className="mb-6">
-        <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-2">Skills Gained:</h4>
-        <ul className="text-white/90 text-sm font-medium space-y-1 pl-4 list-disc">
+        <h4 className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-2">Skills Gained:</h4>
+        <ul className="text-slate-700 text-sm font-medium space-y-1 pl-4 list-disc">
           {intern.skills.map((skill, i) => (
             <li key={i}>{skill}</li>
           ))}
@@ -35,13 +35,13 @@ const InternshipCard = ({ intern, index }) => (
     </div>
 
     {/* Technologies used */}
-    <div className="pt-4 border-t border-white/10">
-      <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
+    <div className="pt-4 border-t border-rose-200">
+      <h4 className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
       <div className="flex flex-wrap gap-2">
         {intern.tech.map((t) => (
           <span 
             key={t}
-            className="px-3 py-1 text-xs font-mono font-bold text-white bg-white/10 rounded-full border border-white/10 hover:bg-white/20 transition-all"
+            className="px-3 py-1 text-xs font-mono font-bold text-slate-800 bg-rose-100 rounded-full border border-rose-200 hover:bg-slate-800/20 transition-all"
           >
             {t}
           </span>
@@ -53,7 +53,7 @@ const InternshipCard = ({ intern, index }) => (
 
 const Internships = () => {
   return (
-    <section className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section className="bg-[#d0c0e5] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       
       {/* Torn paper divider at top */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
@@ -69,7 +69,7 @@ const Internships = () => {
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">
             Work Experience
           </h2>
-          <p className="text-red-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
+          <p className="text-lavender-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
             Practical internships where I applied engineering principles and built real-world assets.
           </p>
         </div>

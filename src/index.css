@@ -2,10 +2,17 @@
 
 @theme {
   /* --- CUSTOM THEME COLORS --- */
-  --color-primary-pink: #ff4fa8;       /* Neon hot pink for highlights, text links, buttons */
-  --color-accent-pink: #f472b6;        /* Soft pink for subtle gradient blends */
-  --color-dark-bg: #090514;            /* Deep velvet indigo background instead of flat black */
-  --color-dark-card: #150d2a;          /* Rich purple-tinted card background */
+  --color-lavender-100: #f4f0fa;
+  --color-lavender-200: #e6e6fa;           /* True Lavender */
+  --color-lavender-300: #d0c0e5;
+  --color-lavender-400: #b99bd0;
+  --color-lavender-500: #a275bb;
+  --color-lavender-600: #8b50a6;
+
+  --color-primary-lavender: var(--color-lavender-300);
+  --color-accent-ivory: #ffe4e6;           /* Rose pink accent */
+  --color-light-bg: #fff1f2;               /* Rose pink background */
+  --color-light-card: #ffe4e6;             /* Deeper rose pink card */
 
   /* --- ANIMATIONS --- */
   --animate-float: float 6s ease-in-out infinite;
@@ -23,9 +30,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* Updated background from pure black (#000) to an elegant deep velvet indigo */
-  background-color: var(--color-dark-bg);
-  color: #fff;
+  /* Updated background to a clean white */
+  background-color: var(--color-light-bg);
+  color: #334155; /* slate-700 */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
